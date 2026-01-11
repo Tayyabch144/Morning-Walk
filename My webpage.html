@@ -1,0 +1,45 @@
+</head>
+<body>
+     <h1> Make by Muhammad Tayyab</h1>
+    <div id="login-section" class="login-box">
+        <h2>Enter Access Details</h2>
+        <input type="text" id="userName" placeholder="Enter Your Name"><br>
+        <input type="password" id="userPass" placeholder="Enter Password (123)"><br>
+        <button onclick="checkAccess()">Open Essay</button>
+    </div>
+
+    <div id="essay-section">
+        <h2>Morning Walk</h2>
+        <p>Morning walk is essential for everybody living in the world.A morning walk is often described as the best start to a day.</br> In the modern world, where our lives are filled with machines and screens, a morning walk brings us back to nature.</br> It is the simplest and most effective form of exercise that requires no money or special equipment.</br>
+
+The atmosphere in the early morning is very different from the rest of the day.</br> The air is cool, fresh, and free from the smoke and noise of city traffic. When we walk in a park or an open field during the sunrise, we experience the beauty of the world. </br>The dew drops on the green grass look like tiny diamonds, and the sweet singing of birds creates a peaceful environment that heals the mind.</p>
+        <ul>
+            <li>It reduces stress, anxiety, and mental pressure.</li>
+            <li>It helps in keeping blood pressure under control</li>
+            <li>Walking helps regulate blood sugar level</li>
+            <li>It sharpens the memory and improves concentration.</li>
+            <li>It tones your legs and back muscles.</li>
+            <li>It helps the body process food more efficiently.</li>
+            <li>Walking in nature helps you think of new ideas.</li>
+        </ul>
+        <h4>Morning walk is very helpful for smokers</h4>
+        <p>Hope you liked my essay!</p>
+    </div>
+
+    <script>
+        function checkAccess() {
+            var name = document.getElementById("userName").value;
+            var pass = document.getElementById("userPass").value;
+
+            if (pass === "123") {
+                document.getElementById("login-section").style.display = "none";
+                document.getElementById("essay-section").style.display = "block";
+                alert("Welcome " + name + "!");
+            } else {
+                alert("Wrong Password! Try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
